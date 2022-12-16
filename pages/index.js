@@ -19,14 +19,12 @@ export default function Home({ allPeople }) {
   return (
     <Layout home>
       <h1 className={styles.title}>
-        Yar Welcome to the Pirate Blog 
+        Sort of a Wizard Related Blog 
       </h1>
 
       <p className={styles.description}>
-        Yo ho!  A pirates life for me. 
+        Mischief managed using a Next.js framework with PHP and SQL to query a WordPress Database
       </p>
-
-      <h2>Content used with love from <a href="https://pirateipsum.me/"> PirateIpsum.me </a></h2>
 
       <div className="list-group">
         {allPeople.map(({ id, name}) => (

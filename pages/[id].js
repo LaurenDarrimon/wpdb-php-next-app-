@@ -43,13 +43,10 @@ export default function Entry (  { personData } ){
                         {personData.post_title}
                     </h4>
                     <h5 className="card-subtitle mb-2 text-muted"> 
-                        published: {personData.post_date}
+                        by {personData.user_login}
                     </h5>
-                    <p className="card-text text-dark">{personData.post_content}</p>
+                    <div className="card-text text-dark" dangerouslySetInnerHTML={{__html: personData.post_content}}/>
                     <br/>
-                    <h5 className="card-text text-dark">
-                        Status: {personData.post_status}
-                    </h5>   
                 </div>
             </article>
         </Layout>
