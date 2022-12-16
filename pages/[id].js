@@ -35,6 +35,7 @@ export async function getStaticPaths() {
 //make a compoenent that will display the persons details at the dynamic route 
 
 export default function Entry (  { personData } ){
+
     return (
         <Layout>
             <article className="card col-6">
